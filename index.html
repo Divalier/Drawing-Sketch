@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="containers brush">
+        <div>
+          <h2>Well Come to the Eassy Sketch</h2>
+        </div>
+        <div>
+          <p>color</p>
+          <div class="color">
+            <input type="color" onchange="colortyp(this.value)" />
+            <p id="colortype">black</p>
+          </div>
+        </div>
+        <div class="button">
+          <button id="Random" onclick="Random()">Random</button>
+          <button id="reset" onclick="Reset()">Reset</button>
+          <button id="erase" onclick="erase()">Erase</button>
+        </div>
+        <div class="button">
+          <button id="erase" onclick="expot()">Export</button>
+        </div>
+      </div>
+      <div class="containers drawb">
+        <div id="range">
+          <div>
+            <input
+              type="range"
+              id="mypixel"
+              min="2"
+              max="64"
+              step="2"
+              onchange="pix(this.value)"
+            />
+          </div>
+          <div id="pixel"></div>
+        </div>
+        <div class="draw board" id="letdraw"></div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
